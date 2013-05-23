@@ -204,6 +204,23 @@
 }
 
 #pragma mark - BButton
+- (void)setIBType:(NSString *)type {
+    static NSArray *typeStrings;
+    if (typeStrings == nil) {
+        typeStrings = @[@"default", @"primary", @"info", @"success", @"warning", @"danger", @"inverse", @"twitter", @"facebook", @"purple", @"gray"];
+    }
+    
+    NSUInteger index = [typeStrings indexOfObject:[type lowercaseString]];
+    if (index != NSNotFound) {
+        [self setType:index];
+    } else {
+        NSException *exception = [NSException exceptionWithName:@"BButton Exception"
+                                                         reason:[NSString stringWithFormat:@"Invalid user attribute for IBType \"%@\"",type]
+                                                       userInfo:nil];
+        [exception raise];
+    }
+}
+
 - (void)setType:(BButtonType)type
 {
     self.color = [BButton colorForButtonType:type];

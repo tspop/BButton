@@ -70,6 +70,7 @@ typedef enum {
 + (BButton *)awesomeButtonWithOnlyIcon:(FAIcon)icon color:(UIColor *)color;
 
 #pragma mark - BButton
+- (void)setIBType:(NSString *)type;
 - (void)setType:(BButtonType)type;
 - (void)addAwesomeIcon:(FAIcon)icon beforeTitle:(BOOL)before;
 
