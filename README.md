@@ -33,7 +33,7 @@ Includes [@leberwurstsaft / FontAwesome-for-iOS](https://github.com/leberwurstsa
 
 ## How To Use
 
-### With Storyboards
+### With Storyboards / Interface Builder
 
 Create a `UIButton` and change its class to `BButton`
 
