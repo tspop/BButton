@@ -37,7 +37,7 @@ Includes [@leberwurstsaft / FontAwesome-for-iOS](https://github.com/leberwurstsa
 
 Create a `UIButton` and change its class to `BButton`
 
-In the identity inspector add a new a new user defined runtime attribute with Key Path "IBType" and Type "String"
+In the identity inspector add a new user defined runtime attribute with Key Path "IBType" and Type "String"
 
 Set it's value to one of the following: "default", "primary", "info", "success", "warning", "danger", "inverse", "twitter", "facebook", "purple", "gray" (case insensitive)
 
